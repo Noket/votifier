@@ -53,7 +53,7 @@ public class Votifier extends JavaPlugin {
 	private String version;
 
 	/** The vote listeners. */
-	private final List<VoteListener> listeners = new ArrayList<VoteListener>();
+	private final List<VoteListener> listeners = new ArrayList<>();
 
 	/** The vote receiver. */
 	private VoteReceiver voteReceiver;
@@ -76,7 +76,7 @@ public class Votifier extends JavaPlugin {
 		Votifier.instance = this;
 
 		// Set the plugin version.
-		version = getDescription().getVersion();
+		version = getDescription().getVersion(); 
 
 		// Handle configuration.
 		if (!getDataFolder().exists()) {
